@@ -1,0 +1,28 @@
+# LangGraph + Groq Agent — Dependencies
+# Install with: pip install -r requirements.txt
+
+# LangGraph core — graph runtime and prebuilt nodes
+langgraph>=1.2.0
+
+# SQLite checkpointer — local development memory backend
+langgraph-checkpoint-sqlite>=3.1.0
+
+# PostgreSQL checkpointer — production memory backend (Railway)
+langgraph-checkpoint-postgres>=3.1.0
+
+# Groq LLM integration via LangChain
+langchain-groq>=0.2.0
+
+# FastAPI + server — HTTP API for Railway deployment
+fastapi>=0.110.0
+uvicorn>=0.29.0
+
+# PostgreSQL async driver (required by PostgresSaver)
+psycopg[binary]>=3.1.0
+psycopg-pool>=3.2.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Async SQLite driver (required by SqliteSaver locally)
+aiosqlite>=0.19.0
